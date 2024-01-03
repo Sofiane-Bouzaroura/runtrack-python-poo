@@ -8,7 +8,7 @@ class Student:
     def add_credits(self, nombre_credits):
         if nombre_credits > 0:
             self.credits += nombre_credits
-            print("crédits ajoutés. Total de crédits maintenant :", nombre_credits, self.credits)
+            print(f"{nombre_credits} crédits ajoutés. Total de crédits maintenant : {self.credits}")
         else:
             print("Le nombre de crédits doit être supérieur à zéro.")
 
@@ -16,7 +16,6 @@ john_doe = Student("Doe", "John", 145)
 
 john_doe.add_credits(10)
 john_doe.add_credits(5)
-john_doe.add_credits(15) 
+john_doe.add_credits(15)  
 
-print("Le nombre de crédits de est de points.",john_doe.prenom, john_doe.nom, john_doe.credits )
-
+print(f"Le nombre de crédits de {john_doe.prenom} {john_doe.nom} est de {john_doe.credits} points.")
